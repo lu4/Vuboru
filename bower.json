@@ -4,7 +4,11 @@
   "dependencies": {
     "sass-bootstrap": "~3.0.0",
     "modernizr": "~2.6.2",
-    "jquery": "~1.10.2"
+    "jquery": "~1.10.2",
+    "jakubzapletal-crypto-js": "~3.1.0",
+    "jsrsasign": "~4.2.1",
+    "qr-js": "~1.1.1",
+    "jquery.qrcode": "~0.7.0"
   },
   "devDependencies": {}
 }

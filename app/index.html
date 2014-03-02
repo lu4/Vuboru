@@ -26,63 +26,235 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-
         <div class="container">
             <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <h3 class="text-muted">Vuboru</h3>
+                <!--<ul class="nav nav-pills pull-right">-->
+                    <!--<li class="active"><a href="#">Home</a></li>-->
+                    <!--<li><a href="#">About</a></li>-->
+                    <!--<li><a href="#">Contact</a></li>-->
+                <!--</ul>-->
+                <h3 class="text-muted">Система "Вибори"</h3>
             </div>
-
-            <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
+            <h4>Розташування 1: Кабінка з компьютером (або домашній компьютер що може бути не підключеним до інтернету)</h4>
+            <h5>Крок 1. Генерація ключів</h5>
+            <div class="row">
+                <div class="col-sm-6">
+                    <i><b>Голос:</b></i><br />
+                    <textarea name="message" rows="8" cols="62" style="font-family: 'Courier New'"
+                              data-container="body" rel="popover" data-toggle="popover" data-trigger="hover"
+                              data-placement="right"
+                              data-title="Ваш голос"
+                              data-content="Ваш голос це звичайний рядок тексту що містить інформацію про кандидата за
+                              якого ви голосуєте. Також доцільно у свій голос додавати 'ідентифікатор' по якому пізніше
+                              можна буде знайти свій голос. У справжній системі значення що міститимуться у цьому полі
+                              мають бути із завчасно оговореного списку можливих значень (кандидатів). Якщо ж у цьому
+                              полі міститимуться значення відмінні від погоджених, то голос важатиметься не дійсним"
+                    >- Ідентифікатор: "6e2a040b1ccc125c1346fe7e4003e5345b061e38"
+- Голос: "Кандидат №5"</textarea>
+                    <i><b>Осліплююче просте число (має приховуватись власником):</b></i><br />
+                    <textarea name="blindPrime" rows="8" cols="62" style="font-family: 'Courier New'; background: #FBB"
+                              data-container="body" rel="popover" data-toggle="popover" data-trigger="hover"
+                              data-placement="bottom"
+                              data-title="Осліплююче просте число"
+                              data-content="Осліплююче просте число - використовується для шифрування
+                              (осліплювання) підписів. Схему застосування осліпленого підпису для зрозумілості можна
+                              розглянути на прикладі анонімного поштового голосування: Ви маєте бажання проголосувати
+                              анонімно за допомогою звичайної пошти. Для цього ви берете звичайний лист паперу, де вказуєте
+                              номер кандидата за якого маєте бажання проголосувати. Далі свій голос кладете у спеціальний
+                              'Броньований' конверт який ніхто окрім вас не може розкрити, також у цей конверт кладете
+                              копірувальний лист 'копірку', на конверті вказуєте свою обернену адресу і відправляєте
+                              в територіальну виборчу комісію. Так як конверт 'броньований' його вміст ніхто не може
+                              дослідити але при цьому на конверті вказано обернену адресу за допомогою котрої
+                              територіальна виборча комісія має можливість вас ідентифікувати і перевірити чи брали ви
+                              участь у голосуванні чи ні, якщо не брали то територіальна виборча комісія ставить свій
+                              підпис на конверті. Оскільки у конверті знаходиться 'копірка' то підпис територіальної
+                              виборчої комісії 'перебивається' на ваш голос, після чого конверт відправляєтсья по адресі
+                              відправника вказаній на ньому. Ви отримуєте конверт, його відкриваєте і таким чином тримаєте
+                              в руках не просто клаптик паперу, а державний документ із підписом державної установи який
+                              засвідчує те, за кого ви проголосували а також те, що ви ще не приймали участі у голосуванні.
+                              Оскільки ваш голос не містить інформації про вашу особу то і визначити хто проголосував
+                              не можливо. Тому після цього ви берете звичайний конверт, не вказуєте на ньому зворотню
+                              адресу, і відправляєте ваш конверт до лічильної комісії. Таким чином лічильна комісія
+                              отримавши ваш конверт, не матиме змоги визначити вашу особу, але при цьому вона може
+                              упевнитись у тому що отриманий голос не брав участі у голосуванні шляхом перевірки підпису
+                              територіальної виборчої комісії. З іншої сторони, ви, маєте можливість перевірити свій
+                              голос а також те чи брали участь у виборах 'мертві душі' за допомогою інформації яку
+                              публікує у засобах масової інформації а також інтернеті лічильна комісія. А саме,
+                              голоси що прийняли участь у голосуванні а так-же окремо список всіх учасників що прийняли
+                              участь у голосуванні. Тобто свій голос ви можете знайти і ідентифікувати (наприклад по
+                              почерку) а також ви можете перевірити чи не брала участь у виборах ваша давно померша
+                              прабабуся або людина із кола ваших знайомих"
+                    ></textarea>
+                    <i><b>Осліплений підпис: </b></i><br />
+                    <textarea name="blindedSignature" rows="8" cols="62" style="font-family: 'Courier New'"
+                              data-container="body" rel="popover" data-toggle="popover" data-trigger="hover"
+                              data-placement="right"
+                              data-title="Осліплений підпис"
+                              data-content="Осліплений підпис це зашифрована версія підпису який свічить про те що ви
+                              проголосували за вказанного вами кандидата. Оскільки підпис зашифрований територіальна виборча
+                              комісія не здатна дізнатись за кого ви проголосували."></textarea>
+                </div>
+                <div class="col-sm-6">
+                    <i><b>Осліплений голос:</b></i><br />
+                    <div name="blindedSignatureQR" data-container="body" rel="popover" data-toggle="popover" data-trigger="hover"
+                         data-placement="left"
+                         data-title="QR код"
+                         data-content="QR код це спосіб передачі інформації аналогічний до 'штрих-коду'
+                         яким маркуються продукти в супер-маркетах, QR код відрізняється від 'штрих-коду' тим що в ньому
+                         можна умістити на багато більше інформації аніж у 'штрих-коді'. В даному QR коді
+                         міститься 'осліплений підпис' вміст якого ви можете бачити у формі під назвою 'Осліплений підпис' зліва"></div>
+                </div>
             </div>
+            <hr />
+            <h4>Розташування 2. Територіальний виборчий округ</h4>
+            <div class="row">
+                <div class="col-sm-6">
+                    <i><b>Приватний ключ територіального виборчого округу (має приховуватись власником):</b></i><br />
+                    <textarea name="sgnkey1" rows="16" cols="62" style="font-family: 'Courier New'; background: #FBB;"
+                              data-container="body" rel="popover" data-toggle="popover" data-trigger="hover"
+                              data-placement="right"
+                              data-title="Приватний ключ"
+                              data-content="Приватний ключ це інформація за допомогою якогї відбувається
+                                            розшифровка повідомлень зашифрованих публічним ключем. Приватний ключ також містить у
+                                            собі згаданий раніше публічний ключ, який можна і необхідно передавати особам з якими
+                                            є необхідність спілкуватись безпечно. За допомогою публічного ключа така особа
+                                            має можливість зашифрувати інформацію але при цьому не зможе її розшифрувати, адже для
+                                            розшифровки їй потрібна буде друга частина ключа якою володієте ви.
+                                            Таким чином шифрування з публічним ключем дозволяє безпечно обмінюватись повідомленнями по
+                                            небезпечним каналам зв`язку. Цей ключ належить територіальній виборчій комісії, якя
+                                            перевіряє те, чи брали ви участь у голосуванні і відповідно за допомогою поточного ключа
+                                            сліпо підписує (не знаючи вмісту вашого повідомлення) інформацію що ви надіслали"
+                    >-----BEGIN RSA PRIVATE KEY-----
+MIICXAIBAAKBgQC2Lh4HLcCR76Wv3oXl6sZ7pv8l9b/66H+I6Bb86tz8RhWCmTCG
+xPVgtZ+w9WutU/rqBHHZOpotX4QDksRD8dRFh6a3HwkIFQdTcDoiD39yNP8F02Gd
+dAl8p/URC5jNCLMSfUK38wMocmoI1I5vqdMNrzUnOup18rl4089Z+faMKQIDAQAB
+AoGBAJrL4z5iWiengxqV8yETBeU8WcJft+n0dapXzHDNAUo8Izr+AIYEBp1Ot4se
+f4igu6zuae80JJ45c2u14p/5dWzN9/URmhTP8xLGjGCjltOJLLyhBPP+ZsLjqu6l
+57MNV6jDqDLdRC66w4NMRCN3FACxcldIC5L6B9OA7UvO1ugBAkEA8s1o6BvufTeD
+ktyOMfW0ZeLGk/6EXp8nf7BIzYhAAPtSt8DegnfYFx2XDgKnYSB15dTDIDMe/KaA
+GcuUb/ZjiQJBAMATb1fFdl7PGccVPgeTaupJayHPySc9PSsACV6VIAnpcU/3NZzd
+MkdIL/JsOsD+1M9uQJqvRZO4qQdjcR5Om6ECQEJGgYlB/pJdcePHomTOvcRF55CE
+G9u8M8rt8qFvvJDICWcxFUulrO16XT4syUWA1825it2iNqYeSL9By63YIokCQBnm
+RPw71xM/r8UleyDAYwlGbxi3EPOmkUnsDldfmltby/ixZ9xIA1CTTkvNBjsh4YY6
+4qE5AxPBMaGaahVhGiECQHyQvXUNE2IUco+ZwmmLnb2ey1s5tBg7i0lEZG47G7GV
+o+yKdJHpToJD8eRJA/2D+pMhQIZm8X/XDIoi1AQ/TRY=
+-----END RSA PRIVATE KEY-----</textarea>
+                    <br />
 
-            <div class="row marketing">
-                <div class="col-lg-6">
-                    <h4>HTML5 Boilerplate</h4>
-                    <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-                    <h4>Sass with Compass</h4>
-                    <p>Compass is an open-source CSS Authoring Framework that uses Sass.</p>
-
-
-                    <h4>Bootstrap</h4>
-                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-                    <h4>Modernizr</h4>
-                    <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
+                    <br />
+                    <i><b>Підпис територіального виборчого округу на осліпленому голосі:</b></i><br />
+                    <textarea name="signedBlindedSignature" rows="8" cols="62" style="font-family: 'Courier New'"
+                              data-container="body" rel="popover" data-toggle="popover" data-trigger="hover"
+                              data-placement="right"
+                              data-title="QR код"
+                              data-content="У цьому полі міститься підписаний територіальною виборчою комісією 'осліплений підпис' створений вами на
+                                            попередньому кроці (зелений QR-код)"
+                    >
+                    </textarea>
+                </div>
+                <div class="col-sm-6">
+                    <i><b>Підпис територіального виборчого округу на осліпленому голосі:</b></i><br />
+                    <div name="signedBlindedSignatureQR"
+                         data-container="body" rel="popover" data-toggle="popover" data-trigger="hover"
+                         data-placement="left"
+                         data-title="QR код"
+                         data-content="QR код це спосіб передачі інформації аналогічний до 'штрих-коду'
+                         яким маркуються продукти в супер-маркетах, QR код відрізняється від 'штрих-коду' тим що в ньому
+                         можна умістити на багато більше інформації аніж у 'штрих-коді'. В даному QR коді
+                         міститься підписаний територіальною виборчою комісією 'осліплений підпис' створений вами на
+                         попередньому кроці. Вміст підпису ви можете бачити у формі під назвою 'Підпис територіального
+                         виборчого округу' зліва"
+                    ></div>
                 </div>
             </div>
 
-            <div class="footer">
-                <p>♥ from the Yeoman team</p>
+            <hr />
+            <h4>Розташування 3. Скринька з голосами</h4>
+            <div class="row">
+                <div class="col-sm-6">
+                    <i><b>Не осліплений бюлетень що готовий до вкидання в урну:</b></i><br />
+                    <textarea name="unblindedSignedBlindedSignature" rows="16" cols="62" style="font-family: 'Courier New'"
+                              data-container="body" rel="popover" data-toggle="popover" data-trigger="hover"
+                              data-placement="right"
+                              data-title="QR код"
+                              data-content="..."
+                            >
+                    </textarea>
+                </div>
+                <div class="col-sm-6">
+                    <i><b>Не осліплений бюлетень що готовий до вкидання в урну:</b></i><br />
+                    <div name="unblindedSignedBlindedSignatureQR"
+                         data-container="body" rel="popover" data-toggle="popover" data-trigger="hover"
+                         data-placement="left"
+                         data-title="QR код"
+                         data-content="..."
+                            ></div>
+                </div>
             </div>
 
-        </div>
+            <!--<div class="jumbotron">-->
+                <!--<h1>'Allo, 'Allo!</h1>-->
+                <!--<p class="lead">Always a pleasure scaffolding your apps.</p>-->
+                <!--<p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>-->
+            <!--</div>-->
 
+            <!--<div class="row marketing">-->
+                <!--<div class="col-lg-6">-->
+                    <!--<h4>HTML5 Boilerplate</h4>-->
+                    <!--<p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>-->
+
+                    <!--<h4>Sass with Compass</h4>-->
+                    <!--<p>Compass is an open-source CSS Authoring Framework that uses Sass.</p>-->
+
+
+                    <!--<h4>Bootstrap</h4>-->
+                    <!--<p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>-->
+
+                    <!--<h4>Modernizr</h4>-->
+                    <!--<p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>-->
+
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="footer">-->
+                <!--<p>♥ from the Yeoman team</p>-->
+            <!--</div>-->
+
+        </div>
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/jsrsasign/ext/jsbn.js"></script>
+        <script src="bower_components/jsrsasign/ext/jsbn2.js"></script>
+        <script src="bower_components/jsrsasign/ext/rsa.js"></script>
+        <script src="bower_components/jsrsasign/ext/rsa2.js"></script>
+        <script src="bower_components/jsrsasign/ext/prng4.js"></script>
+        <script src="bower_components/jsrsasign/ext/rng.js"></script>
+        <script src="bower_components/jsrsasign/ext/base64.js"></script>
+        <script src="bower_components/jsrsasign/ext/sha1.js"></script>
+        <script src="bower_components/jsrsasign/ext/sha256.js"></script>
+        <script src="bower_components/jsrsasign/ext/sha512.js"></script>
+
+        <script src="bower_components/jakubzapletal-crypto-js/src/core.js"></script>
+        <script src="bower_components/jakubzapletal-crypto-js/src/md5.js"></script>
+        <script src="bower_components/jakubzapletal-crypto-js/src/sha1.js"></script>
+        <script src="bower_components/jakubzapletal-crypto-js/src/sha256.js"></script>
+        <script src="bower_components/jakubzapletal-crypto-js/src/ripemd160.js"></script>
+        <script src="bower_components/jakubzapletal-crypto-js/src/x64-core.js"></script>
+        <script src="bower_components/jakubzapletal-crypto-js/src/sha512.js"></script>
+
+        <script src="bower_components/jsrsasign/rsapem-1.1.js"></script>
+        <script src="bower_components/jsrsasign/rsasign-1.2.js"></script>
+        <script src="bower_components/jsrsasign/asn1hex-1.1.js"></script>
+        <script src="bower_components/jsrsasign/x509-1.1.js"></script>
+        <script src="bower_components/jsrsasign/crypto-1.1.js"></script>
+
+        <script src="bower_components/jquery.qrcode/src/jquery.qrcode.js"></script>
+        <script src="bower_components/jquery.qrcode/src/qrcode.js"></script>
+
         <!-- endbower -->
         <!-- endbuild -->
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
 
         <!-- build:js scripts/plugins.js -->
         <script src="bower_components/sass-bootstrap/js/affix.js"></script>
@@ -101,6 +273,12 @@
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
+        <script>
+            $('body').popover({
+                selector: '[rel=popover]',
+                trigger: 'hover'
+            });
+        </script>
         <!-- endbuild -->
 </body>
 </html>

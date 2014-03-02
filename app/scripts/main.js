@@ -1,5 +1,3 @@
-debugger;
-
 var sgnPem = $('[name="sgnkey1"]').val();
 
 var key = new window.RSAKey();
@@ -42,7 +40,7 @@ $('[name="blindedSignatureQR"]').qrcode({
     ecLevel: 'L'
 });
 
-var s = key.doPrivate(m);
+var s = key.doPrivate(m); // Computes signature, i.e: `m^d mod n`
 var s_x64 = hex2b64(s.toString(16));
 
 $('[name="signedBlindedSignature"]').val(window.linebrk(s_x64, 32));
@@ -68,3 +66,11 @@ $('[name="unblindedSignedBlindedSignatureQR"]').qrcode({
     fill: '#a33',
     ecLevel: 'L'
 });
+
+var signatureVerification = signature.modPowInt(e, n); // Computes: `signature^e mod n`
+
+if (signatureVerification.toString() == message.toString()) {
+    $('[name="signatureValidation"]').val(vote + "\r\n\r\nПідпис валідний зараховується!");
+} else {
+    $('[name="signatureValidation"]').val(vote + "\r\n\r\nПідпис не валідний, голос не зараховується!");
+}
